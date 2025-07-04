@@ -3,8 +3,8 @@ function calcularMedia() {
     const n2 = parseFloat(document.getElementById("nota2").value);
     const n3 = parseFloat(document.getElementById("nota3").value);
 
-    if (isNaN(n1) || isNaN(n2) || isNaN(n3)) {
-        document.getElementById("resultado").textContent = "Preencha as três notas corretamente.";
+    if (isNaN(n1) || isNaN(n2) || isNaN(n3) || n1 < 0 || n1 > 10 || n2 < 0 || n2 > 10 || n3 < 0 || n3 > 10) {
+        document.getElementById("resultado").textContent = "Preencha as três notas corretamente de zero a dez.";
         return;
     }
 

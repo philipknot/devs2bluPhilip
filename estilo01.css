@@ -37,13 +37,15 @@ label {
 }
 
 input[type="number"] {
-    width: 100%;
+    width: 150px;
     padding: 10px;
     font-size: 16px;
     border: 2px solid #ccc;
     border-radius: 8px;
     transition: border-color 0.3s;
-    text-align: center
+    text-align: center;
+    margin: 0 auto;
+    display: block;
 }
 
 input[type="number"]:focus {
